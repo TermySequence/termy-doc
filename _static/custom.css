@@ -1,25 +1,27 @@
 div.document {
     width: auto;
+    max-width: 1500px;
 }
 
 div.bodywrapper {
-    margin: 0 50px 0 350px;
+    margin: 0 20px 0 320px;
 }
 
 div.body {
-    max-width: none
+    max-width: none;
+    padding: 0px 0px 0px 30px;
 }
 
 div.sphinxsidebar {
     width: 300px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 20px;
     position: absolute;
     background: #eeeeee;
 }
 
 div.footer {
     width: auto;
-    margin: 20px 50px 30px 350px;
+    margin: 20px 20px 30px 320px;
     text-align: center;
 }
 
