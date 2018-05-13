@@ -82,7 +82,7 @@ The connection can be closed using *Server→Disconnect*. But leave it open for 
 Files
 -----
 
-One of the design goals of TermySequence is that files should come for free. That is to say, if a connection already exists to a server for the purpose of running terminals, it shouldn't be necessary to open additional connections using separate tools to download and upload files.
+One of the `design goals <https://termysequence.io/posts/first-post.html>`_ of TermySequence is that files should come for free. That is to say, if a connection already exists to a server for the purpose of running terminals, it shouldn't be necessary to open additional connections using separate tools to download and upload files.
 
 Open the :doc:`Files tool <tools/files>` by clicking the Files tab or using *View→Tools→Files*. In this tool, an :program:`ls`-like listing of files is displayed. The listing will follow the terminal's current directory. Right click a file in the tool to see what's possible using the context menu.
 
