@@ -38,7 +38,7 @@ In :program:`qtermy`, terminals are independent of the viewports which display t
 Keymap Tool
 -----------
 
-Okay, so Shift+Left and Shift+Right switch terminals in the current viewport. What other key bindings are there? Bring up the :doc:`Keymap tool <tools/keymap>` by clicking its tab or using *View→Tools→Keymap*. In this tool, a complete list of key bindings is displayed. It's specifically designed to help you get up to speed with the keyboard.
+Okay, so Shift+Left and Shift+Right switch terminals in the current viewport. What other key bindings are there? Bring up the :doc:`Keymap tool <tools/keymap>` by clicking its tab or using *Tools→Activate→Keymap*. In this tool, a complete list of key bindings is displayed. It's specifically designed to help you get up to speed with the keyboard.
 
 A word about :doc:`keymaps <settings/keymap>`: they are highly customizable. Key bindings come in two flavors: action bindings and literal bindings. A literal binding sends some UTF-8 text to the terminal as input. An action binding runs an :doc:`action <actions>`, which tells :program:`qtermy` to do something. There are roughly 300 actions to choose from, and you can write :doc:`your own <plugins/action>` in Javascript. All of :program:`qtermy`'s menus are just lists of action bindings.
 
@@ -59,7 +59,7 @@ What appears is the :doc:`Settings Editor dialog <dialogs/settings-editor>` used
 
 We want to change the profile's color theme, so find the :termy:profile:`color theme <Appearance/Palette>` setting (it's in the Appearance category) and select your preferred color theme from the dropdown. Then click OK.
 
-Next, click *Clone Profile* to clone the default profile. Give the new profile a name. In the settings editor window for the new profile, change the color theme to be different from the one in default profile.
+Next, click *Clone Profile* to clone the default profile. Give the new profile the name "Transient". In the settings editor window for the new profile, change the color theme to be different from the one in default profile. Click OK in both dialogs.
 
 Now we'll make it so the transient local server uses the new profile by default. Click on the transient local server (desktop icon) in the Terminals tool, then choose *Server→Edit Server*. This brings up a settings editor for another type of settings object, the :doc:`server settings <settings/server>`. In the :termy:server:`default profile <Server/DefaultProfile>` option, select the new profile from the dropdown. Then click OK. Now, when you restart :program:`qtermy`, the terminals belonging to the transient local server will use the new profile.
 
@@ -84,7 +84,7 @@ Files
 
 One of the `design goals <https://termysequence.io/posts/first-post.html>`_ of TermySequence is that files should come for free. That is to say, if a connection already exists to a server for the purpose of running terminals, it shouldn't be necessary to open additional connections using separate tools to download and upload files.
 
-Open the :doc:`Files tool <tools/files>` by clicking the Files tab or using *View→Tools→Files*. In this tool, an :program:`ls`-like listing of files is displayed. The listing will follow the terminal's current directory. Right click a file in the tool to see what's possible using the context menu.
+Open the :doc:`Files tool <tools/files>` by clicking the Files tab or using *Tools→Activate→Files*. In this tool, an :program:`ls`-like listing of files is displayed. The listing will follow the terminal's current directory. Right click a file in the tool to see what's possible using the context menu.
 
 For local servers, the Files tool is nice to have. But it's not just a local thing, it works with remote terminals too. Switch to a terminal belonging to the connection you opened in the previous step. Notice how you can see the root user's files in the Files tool. Try uploading a file to root's home directory. Try downloading a file to your home directory. In the course of doing this, you'll be introduced to the :doc:`Tasks tool <tools/tasks>` where :program:`qtermy` reports all of its tasks such as uploads and downloads.
 
@@ -99,9 +99,9 @@ Run :command:`ls --hyperlink` in a terminal. If your version of :program:`ls` su
 
 If you have a git repository handy (with modified or staged changes), run :command:`git status` in a terminal with shell integration active. If the relevant :doc:`semantic parser <plugins/parser>` is loaded, the output will be annotated with :term:`semantic regions <semantic region>` produced by the plugin. Unlike OSC 8 hyperlinks, parser plugins don't require any support from the command itself, just ordinary text output that can be parsed.
 
-To demonstrate :doc:`custom action plugins <plugins/action>`, we'll create a key binding for the RectangleCopy plugin that ships with :program:`qtermy`. Choose *Settings→Edit Keymap "Default"* to open the :doc:`Keymap Editor dialog <dialogs/keymap-editor>`, then click *New Rule* to open the :ref:`Binding Editor dialog <binding-editor>`. We'll bind Shift+F10 to the custom action, so under *Key or Button*, select F10 in dropdown or focus the text field and press F10. In the *Conditions* table, click the *Requirement* for Shift and select "must be true". Finally, under *Outcome*, select "Perform action" and enter the text "CustomRectangleCopy" in the combo box. Click OK in both dialogs to save the changes.
+To demonstrate :doc:`custom action plugins <plugins/action>`, we'll create a key binding for the RectangleCopy plugin that ships with :program:`qtermy`. Choose *Settings→Edit Keymap "Default"* to open the :doc:`Keymap Editor dialog <dialogs/keymap-editor>`, then click *New Rule* to open the :ref:`Binding Editor dialog <binding-editor>`. We'll bind Shift+F10 to the custom action, so under *Key or Button*, select F10 in the dropdown or focus the text field and press F10. In the *Conditions* table, click the *Requirement* for Shift and select "must be true". Finally, under *Outcome*, select "Perform action" and enter the text "CustomRectangleCopy" in the combo box. Click OK in both dialogs to save the changes.
 
-Now, generate some text in a terminal, make a selection, and press Shift+F10 to execute the custom action. The inner rectangle of text defined by the selection will be copied to the clipboard and a brief animation will display at both ends of the rectangle. The RectangleCopy plugin is just one example of what can be done with :program:`qtermy`'s Javascript API for custom actions. See the file action.mjs.example for more custom action examples.
+Now, generate some text in a terminal, make a selection, and press Shift+F10 to execute the custom action. The inner rectangle of text defined by the selection will be copied to the clipboard and a brief animation will display at both ends of the rectangle. The RectangleCopy plugin is just one example of what can be done with :program:`qtermy`'s Javascript API for custom actions. See the file `action.mjs <https://github.com/TermySequence/termysequence/blob/master/src/dist/plugins/action.mjs.example>`_ for more custom action examples.
 
 End
 ---
