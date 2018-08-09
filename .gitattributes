@@ -1,2 +1,3 @@
 /mkdist.sh      export-ignore
+/mkhtml.sh      export-ignore
 .git*           export-ignore
