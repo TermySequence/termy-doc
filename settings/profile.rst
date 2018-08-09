@@ -210,6 +210,8 @@ Emulator
 
    The terminal answerback string can also be set via this setting.
 
+   *New in version 1.1*: Per-session environment variables can also be set via this setting. These variables will be copied from the environment of the connecting client, and a warning will be displayed when the variables do not match those of the :termy:action:`owning <TakeTerminalOwnership>` client. :doc:`termyctl <../man/ctl>` may be used to check and fix these variables from within the terminal. By default, :envvar:`DISPLAY` and :envvar:`SSH_AUTH_SOCK` are configured as per-session environment variables.
+
 .. termy:profile:: Emulator/ActionOnProcessExit enumeration
 
    Specifies what to do when the :termy:profile:`Command <Emulator/Command>` exits. One option is to restart the command. Another option is to stop the emulator, which may close the terminal depending on the configured :termy:profile:`AutoClose <Emulator/AutoClose>` setting.

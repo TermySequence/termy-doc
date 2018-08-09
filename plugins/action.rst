@@ -264,6 +264,10 @@ Terminal Interface
 
    Returns a :ref:`settings handle <action-settings>` for the terminal's current :doc:`profile <../settings/profile>`.
 
+.. js:function:: terminal.getTheme()
+
+   *(API version 1.2)* Returns a :ref:`theme handle <action-settings>` for the :doc:`theme <../settings/theme>` matching the terminal's current :termy:profile:`Palette <Appearance/Palette>`, or ``undefined`` if there is no matching theme.
+
 .. js:function:: terminal.getServer()
 
    Returns a :ref:`server handle <action-server>` for the terminal's :doc:`server <../settings/server>`.
@@ -400,6 +404,10 @@ A settings handle refers to a :doc:`settings object <../settings/index>`.
 .. js:function:: settings.getKeymap()
 
    For profile handles only, returns a :ref:`settings handle <action-settings>` for the profile's :termy:profile:`Keymap <Input/Keymap>`.
+
+.. js:function:: settings.getPalette()
+
+   *(API version 1.2)* For profile and theme handles only, returns a palette object as described by and suitable for assignment to :js:attr:`terminal.palette`.
 
 .. js:function:: settings.lookupShortcut(actionString)
 

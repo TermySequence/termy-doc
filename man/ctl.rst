@@ -21,8 +21,19 @@ Description
 
 :program:`termyctl` is used to set and clear various useful attributes from within a *TermySequence* terminal session. The effects of setting these attributes will vary depending on the specific client program being used.
 
+:program:`termyctl` also provides an interface to check the status of and adjust "per-session" environment variables whose values depend on the terminal's current owning client. :envvar:`DISPLAY` and :envvar:`SSH_AUTH_SOCK` are examples of environment variables typically managed in this way. Which variables are considered per-session is controlled by the client program, typically via terminal profile settings.
+
 Commands
 --------
+
+**check-env**
+   Check the status of per-session environment variables, if any. The output consists of a list of variable names along with the value that each variable should have (according to the terminal's current ownership), the value that the multiplexer server believes the variable to have (based on when the environment was last reset), and the value that the variable actually has.
+
+**fix-env**
+   Print a set of shell assignment statements which adjust the environment to correspond to the environment of the connected client which currently owns the terminal. A reset-env command will also be included if necessary. The output of this command is suitable for evaluation by the shell using eval.
+
+**reset-env**
+   Inform the multiplexer that the terminal's environment has been updated to match the environment of the connected client which currently owns the terminal. This command should not be run unless the environment has in fact been updated. A call to this command will be included in the output of fix-env when appropriate.
 
 **set-icon** *name*
    Set an icon name for the terminal session. If the client supports this attribute, the corresponding icon will be displayed with the terminal thumbnail or otherwise associated with the terminal.

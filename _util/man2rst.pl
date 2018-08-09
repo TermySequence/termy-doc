@@ -64,6 +64,7 @@ my $stem = '../man/';
 
 sub make_redirect {
     my ($src,$dest) = @_;
+    $dest =~ s|^man\d+/||;
     die "Unknown redirect destination $dest\n" unless exists $links{$dest};
     for (keys %links) {
         if ($links{$_} eq $src) {
