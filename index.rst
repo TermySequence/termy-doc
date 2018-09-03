@@ -4,7 +4,7 @@
 TermySequence Documentation
 ===========================
 
-This is the documentation for TermySequence, version |version|. Visit the `main page <https://termysequence.io/>`_ for an introduction and basic overview. Or, visit the `users' page <https://termysequence.io/user/>`_ for news and updates. Or, visit `github <https://github.com/TermySequence>`_ to browse the source and report issues.
+This is the documentation for TermySequence, version |version|. Visit the `home page <https://termysequence.io/>`_ for an introduction and basic overview. Or, visit the `users' page <https://termysequence.io/user/>`_ for news and updates. Or, visit `github <https://github.com/TermySequence>`_ to browse the source and report issues.
 
 .. toctree::
    :maxdepth: 3
