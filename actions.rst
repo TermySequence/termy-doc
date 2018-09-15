@@ -1457,6 +1457,8 @@ Reference
 
    Writes :termy:param:`Text` to the :ref:`specified terminal <terminal-lookup>`. With :doc:`shell integration <shell-integration>` enabled, if the terminal has an active prompt and characters have been typed at the prompt, KILL or backspace characters will be written ahead of :termy:param:`Text` in order to clear those characters.
 
+   Note that characters appearing after the cursor at an active prompt will generally *not* be cleared by KILL or backspace, and without shell integration, no characters will be cleared.
+
 .. termy:action:: WriteTextNewline Text TerminalId
 
    Calls :termy:action:`WriteText`, then writes a newline character.
