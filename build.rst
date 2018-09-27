@@ -38,7 +38,7 @@ As with the server, if :program:`qtermy` will be installed on a machine that use
 
 *New in version 1.1*: The `Chrome V8 engine <https://developers.google.com/v8/>`_ by Google is now bundled in the client tarball and built automatically. Downloading and building V8 separately is no longer required. Refer to the `V8 Public Wiki <https://v8project.org>`_ for more information on Chrome V8. If not building on amd64, it may be necessary to set the :makevar:`V8_ARCH` and :makevar:`V8_ARMFP` CMake variables appropriately.
 
-.. note:: The V8 build runs as a sub-make and its entire output may be buffered by CMake and not printed until the sub-make has finished. The build will appear to be frozen during this time, but a process monitor such as :program:`top` will show the running V8 compile processes. The V8 build can take over an hour to run.
+.. note:: The V8 build runs as a sub-make. To avoid having the entire output of the V8 build buffered until completion, run the top-level make without ``-O`` or with ``-Onone``. The V8 build can take over an hour to run.
 
 *New in version 1.1*: :program:`qtermy` now supports either version 2 or version 3 of `the libfuse FUSE library <https://github.com/libfuse/libfuse/>`_. Set the CMake variables :makevar:`USE_FUSE3` or :makevar:`USE_FUSE2` to enable one or the other version. By default, version 3 is enabled. Set both variables to OFF to disable FUSE support.
 
