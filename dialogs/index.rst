@@ -32,3 +32,4 @@ These pages can be accessed by clicking the Help button in the respective window
    settings-editor
    view-information
    event-log
+   setup-tasks

@@ -6,7 +6,7 @@ First Steps
 
 Got :program:`qtermy` running? Great! Follow along with this tutorial to familiarize yourself with some aspects of how TermySequence works.
 
-First off, if your system employs systemd, you may be greeted with a prompt to run :doc:`man/setup`. Saying yes opens a new terminal and runs the setup program. As part of the setup, your :term:`persistent user server` (discussed below) will be killed and you'll get to see the nice red X indicators that pop up when :program:`qtermy` loses a connection to a multiplexer server. To get the multiplexer back on its feet, use *Connect→Persistent Local Server* or restart the application. Saying no won't break anything immediately, and you can always do the :doc:`systemd setup <systemd>` by hand later.
+First off, when running :program:`qtermy` for the first time, you will be greeted with the :doc:`Setup Tasks dialog <dialogs/setup-tasks>`. Here you can enable :doc:`shell integration <shell-integration>` and set up your :term:`persistent user server` (discussed below) as a systemd user service. Skipping this won't break anything immediately, and you can always run :doc:`termy-setup <man/setup>` by hand later.
 
 With that out of the way, what you see before you should resemble :ref:`this <first-steps-example>`:
 

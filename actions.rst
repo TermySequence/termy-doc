@@ -1060,6 +1060,10 @@ Reference
 
    A custom icon can be set on a terminal automatically using the :termy:server:`FixedThumbnailIcon <Appearance/FixedThumbnailIcon>` profile setting. Note that an icon is never shown if :termy:profile:`ShowThumbnailIcon <Appearance/ShowThumbnailIcon>` is disabled in the :doc:`profile <settings/profile>`.
 
+.. termy:action:: SetupTasks
+
+   Opens the :doc:`Setup Tasks dialog <dialogs/setup-tasks>`.
+
 .. termy:action:: ShowMenuBar
 
    Shows the menu bar in the active window, if hidden.

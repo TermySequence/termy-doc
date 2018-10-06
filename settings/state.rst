@@ -15,4 +15,4 @@ The information saved in the state settings includes the following:
    * Which :doc:`profiles <profile>`, :doc:`connections <connection>`, :doc:`launchers <launcher>`, and :doc:`alerts <alert>` have been marked as favorite.
    * Which :doc:`profile <profile>` and :doc:`launcher <launcher>` have been marked as default.
    * Which icons were last specified in calls to :termy:action:`SetTerminalIcon` and :termy:action:`SetServerIcon`.
-   * Whether to show the :termy:action:`TipOfTheDay` and :doc:`Systemd Setup <../systemd>` dialog boxes on startup.
+   * Whether to show the :termy:action:`TipOfTheDay` and :termy:action:`SetupTasks` dialog boxes on startup.

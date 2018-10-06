@@ -78,7 +78,7 @@ A small number of basic client attributes, such as the UID, are set directly by 
 Notes
 -----
 
-When :manpage:`systemd(1)` is used to manage login sessions, certain administrative commands must be run to to allow the persistent user server to survive across user login sessions. Refer to :doc:`termy-systemd-setup <../man/setup>`\ (1) for more information.
+When :manpage:`systemd(1)` is used to manage login sessions, certain administrative commands must be run to to allow the persistent user server to survive across user login sessions. Refer to :doc:`termy-setup <../man/setup>`\ (1) for more information.
 
 :program:`qtermy` has the ability to perform remote file and directory mounts using :manpage:`fuse(8)`, but only if FUSE support was enabled at compile time, the FUSE runtime is present on the system, and the user has the necessary permissions to establish unprivileged FUSE mounts.
 

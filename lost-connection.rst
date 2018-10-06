@@ -28,7 +28,7 @@ If this is occurring, increase the keepalive time to an appropriate value for th
 Setup Script
 ------------
 
-The :doc:`termy-systemd-setup <man/setup>` script intentionally kills the local :term:`persistent user server` in order to relaunch it as a socket activated user service. :program:`qtermy` may offer to run this script if it detects that the persistent user server is not properly set up for systemd. This is expected behavior.
+The :doc:`termy-setup <man/setup>` script intentionally kills the local :term:`persistent user server` in order to relaunch it as a socket activated user service. This is expected behavior.
 
 Refer to :doc:`systemd` for more information.
 

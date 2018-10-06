@@ -21,5 +21,6 @@ These are reformatted versions of the man pages installed with :doc:`termy-serve
    man/imgcat
    man/imgls
    man/setup
+   man/systemd
 
 See also the :doc:`qtermy command reference <commands-qt>`.

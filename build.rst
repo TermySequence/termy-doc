@@ -27,8 +27,6 @@ If :program:`termy-server` will be installed on a machine that uses systemd-logi
 
 If :program:`termy-server` will be installed on any machine that hosts git repositories or working trees, enabling the `libgit2 <https://libgit2.github.com/>`_ support is recommended. Do this by setting the CMake variable :makevar:`USE_LIBGIT2`. Note that libgit2 is dynamically loaded by the server at runtime, so the library is not required to be present even if the support for it is enabled.
 
-Setting the CMake variable :makevar:`INSTALL_SHELL_INTEGRATION` will install the shell integration scripts distributed with TermySequence. This removes the need for users to manually install shell integration, provided they use certain shells. See :doc:`shell-integration`.
-
 Building the Client
 -------------------
 

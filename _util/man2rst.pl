@@ -25,6 +25,7 @@ my %config = (
     '@MONITOR_NAME@' => 'termy-monitor',
     '@APP_NAME@' => 'qtermy',
     '@PIPE_NAME@' => 'qtermy-pipe',
+    '@SETUP_NAME@' => 'termy-setup',
     '@SYSTEMD_SETUP_NAME@' => 'termy-systemd-setup',
     '@WEB_NAME@' => 'termy-web',
 
@@ -48,7 +49,8 @@ my %links = (
     'termy-download' => 'download',
     'termy-imgcat' => 'imgcat',
     'termy-imgls' => 'imgls',
-    'termy-systemd-setup' => 'setup',
+    'termy-setup' => 'setup',
+    'termy-systemd-setup' => 'systemd',
     'qtermy' =>'gui',
     'qtermy-pipe' =>'pipe',
     'termyctl' => 'ctl',
@@ -236,7 +238,7 @@ sub process_file {
                 push @para, "**$1**\\ $2";
             }
         }
-        elsif ($line =~ m/^\.B (\S+)/) {
+        elsif ($line =~ m/^\.B (\S.*)/) {
             if ($directive eq 'sect') {
                 (my $title = $1) =~ s/(\w+)/\u\L$1/g;
                 push @para, "`$title`_";
