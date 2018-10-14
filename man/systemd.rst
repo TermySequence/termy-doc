@@ -19,7 +19,7 @@ Synopsis
 Description
 -----------
 
-.. note:: This command is deprecated, please use :doc:`termy-setup <../man/setup>`\ (1) instead.
+.. note:: This command is deprecated. Please use :doc:`termy-setup <../man/setup>`\ (1) instead.
 
 :program:`termy-systemd-setup` is an interactive shell script that essentially runs the following commands::
 

@@ -10,7 +10,9 @@ my $date = '2018';
 
 my %config = (
     '@DEBUG_SUFFIX@' => '',
-    '@CMAKE_INSTALL_PREFIX@' => '$prefix',
+    '@CMAKE_INSTALL_PREFIX@' => '/usr',
+    '@CMAKE_INSTALL_FULL_DATADIR@' => '/usr/share',
+    '@CMAKE_INSTALL_FULL_SYSCONFDIR@' => '/etc',
     '@PROJECT_NAME@' => 'termysequence',
 
     '@FRIENDLY_NAME@' => 'TermySequence',

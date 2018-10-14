@@ -46,6 +46,14 @@ Constants
 
    The install prefix configured when :program:`qtermy` was :doc:`built <../build>`. Useful for plugins which need to reference files or paths relative to the install location.
 
+.. js:attribute:: plugin.installDatadir
+
+   *(API version 1.3)* The install datadir configured when :program:`qtermy` was built.
+
+.. js:attribute:: plugin.installConfdir
+
+   *(API version 1.3)* The install sysconfdir configured when :program:`qtermy` was built.
+
 Properties
 ----------
 

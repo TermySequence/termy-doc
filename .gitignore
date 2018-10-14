@@ -1,6 +1,8 @@
 _build/
 __pycache__/
-*.tar.*
+/*.tar.*
+/*.sig
+/*.sha256
 
 *~
 .#*

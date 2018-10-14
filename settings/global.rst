@@ -59,7 +59,7 @@ General
 
    The root URL used by the application to access :doc:`this documentation <../index>`. Setting an empty string and restarting the application will restore the default value.
 
-   .. tip:: Save a `copy <https://termysequence.io/releases/>`_ of this documentation to your hard drive, then set this setting to its ``file://`` URL to get instant page loads and offline availability.
+   .. tip:: Save a `copy <https://termysequence.io/releases/index.html#source-releases>`_ of this documentation to your hard drive, then set this setting to its ``file://`` URL to get instant page loads and offline availability.
 
    .. note:: This setting requires an application restart to take effect.
 

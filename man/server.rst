@@ -76,7 +76,7 @@ Files
 
 | :file:`{$XDG_CONFIG_HOME}/termy-server/id-script`
 | :file:`/etc/termy-server/id-script`
-| :file:`{$prefix}/lib/termy-server/id-script`
+| :file:`/usr/lib/termy-server/id-script`
 
 Programs executed by :program:`termy-server` to determine the UUID of the local machine. The program should print the UUID on standard output. By default, :file:`/etc/machine-id` is used; the *id-script* programs can be used as an override or replacement for that file. One or the other must be present; the *TermySequence* protocol requires each machine to have a unique identifier.
 

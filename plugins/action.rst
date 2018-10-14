@@ -142,7 +142,7 @@ A manager handle represents an application window. Since actions may need to dis
 
 .. js:function:: manager.listThemes()
 
-   Returns a list of :ref:`settings handles <action-settings>` corresponding to all :doc:`themes <../settings/theme>`.
+   Returns a map of :ref:`settings handles <action-settings>` corresponding to all :doc:`themes <../settings/theme>`. The map keys are the theme names.
 
 .. js:function:: manager.listPanes()
 
@@ -168,6 +168,14 @@ A manager handle represents an application window. Since actions may need to dis
 .. js:function:: manager.copy(string)
 
    Copies the given string to the clipboard as UTF-8 text.
+
+.. js:attribute:: manager.clientId
+
+   *(API version 1.3)* The UUID of this client.
+
+.. js:function:: manager.getClientAttribute(name)
+
+   *(API version 1.3)* Returns the value of the named client :term:`attribute`, or ``undefined`` if it doesn't exist.
 
 .. _action-server:
 
@@ -251,6 +259,10 @@ Terminal Interface
 .. js:attribute:: terminal.rows
 
    A :ref:`buffer handle <action-buffer>` for the terminal's scrollback buffer.
+
+.. js:attribute:: terminal.ours
+
+   *(API version 1.3)* Whether this client holds :termy:action:`ownership <TakeTerminalOwnership>` of the terminal.
 
 .. js:function:: terminal.getAttribute(name)
 

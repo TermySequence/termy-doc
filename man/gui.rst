@@ -38,7 +38,7 @@ Options
    Disable loading all plugins.
 
 **--nosysplugins**
-   Disable loading plugins from :file:`{$prefix}/share/qtermy/plugins`.
+   Disable loading plugins from :file:`/usr/share/qtermy/plugins`.
 
 **-t,--rundir** *dir*
    Look for the server's local socket under runtime directory *dir*\ . The specifiers %t and %U, if present, are expanded to the systemd runtime directory and the user UID respectively. Specifying this option is only necessary if :doc:`termy-server <../man/server>`\ (1) is launched with a custom runtime directory.
@@ -63,13 +63,13 @@ Files
 Location where :program:`qtermy` stores its configuration files.
 
 | :file:`{$XDG_DATA_HOME}/qtermy/`
-| :file:`{$prefix}/share/qtermy/`
+| :file:`/usr/share/qtermy/`
 
 Locations where :program:`qtermy` looks for icons, images, plugins, and other data files.
 
 | :file:`{$XDG_CONFIG_HOME}/qtermy/attr-script`
 | :file:`/etc/qtermy/attr-script`
-| :file:`{$prefix}/lib/qtermy/attr-script`
+| :file:`/usr/lib/qtermy/attr-script`
 
 Programs executed by :program:`qtermy` to set client-specific UTF-8 key-value pairs reported to servers and visible to other clients. The program should print lines of the form ``key=value`` and must exit quickly. These scripts are optional and are not required to be present.
 

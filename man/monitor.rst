@@ -47,13 +47,13 @@ Files
 
 | :file:`{$XDG_CONFIG_HOME}/termy-server/attr-script`
 | :file:`/etc/termy-server/attr-script`
-| :file:`{$prefix}/lib/termy-server/attr-script`
+| :file:`/usr/lib/termy-server/attr-script`
 
 Programs executed by :doc:`termy-server <../man/server>`\ (1) to set system-specific UTF-8 key-value pairs reported to clients. Only the first script found using the order shown is executed. The program should print lines of the form ``key=value`` on standard output and must exit quickly. Values output by the program override the values printed by termy-monitor --initial. These scripts are optional and are not required to be present.
 
 | :file:`{$XDG_CONFIG_HOME}/termy-server/monitor-script`
 | :file:`/etc/termy-server/monitor-script`
-| :file:`{$prefix}/lib/termy-server/monitor-script`
+| :file:`/usr/lib/termy-server/monitor-script`
 
 Programs executed by :doc:`termy-server <../man/server>`\ (1) to set system-specific UTF-8 key-value pairs reported to clients. The program should print lines of the form ``key=value`` on standard out and may run as long as necessary, however it must exit on receipt of *SIGTERM* or when its standard input is closed.  Only the first script found using the order shown is executed, and if a script is found, :program:`termy-monitor` is not executed. These scripts are optional and are not required to be present.
 

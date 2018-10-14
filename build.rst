@@ -6,7 +6,7 @@ Building from Source
 
 .. highlight:: none
 
-To build from source, download the latest release tarball from the `releases page <https://termysequence.io/releases/>`_ and unpack it into a source folder. Consult the included `README <https://github.com/TermySequence/termysequence/blob/master/README.md>`_ for the list of supported platforms and the list of required and optional dependencies and their minimum versions.
+To build from source, download the latest release tarball from the `releases page <https://termysequence.io/releases/index.html#source-releases>`_ and unpack it into a source folder. Consult the included `README <https://github.com/TermySequence/termysequence/blob/master/README.md>`_ for the list of supported platforms and the list of required and optional dependencies and their minimum versions.
 
 *New in version 1.1*: The server and client are now distributed in separate tarballs.
 

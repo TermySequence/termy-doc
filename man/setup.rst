@@ -9,7 +9,7 @@ termy-setup
 Name
 ----
 
-:program:`termy-setup` - Perform setup actions for :doc:`termy-server <../man/server>`\ (1).
+:program:`termy-setup` - Perform setup actions for :doc:`termy-server <../man/server>`\ (1)
 
 Synopsis
 --------
